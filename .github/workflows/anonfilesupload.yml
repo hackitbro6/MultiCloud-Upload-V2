@@ -1,0 +1,23 @@
+name: anonfilesuploadapi
+
+on:
+  workflow_dispatch:
+   inputs:
+    directlink:
+      description:'Enter the direct u want to upload to anonfiles'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: download directlink
+        run: wget 
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
