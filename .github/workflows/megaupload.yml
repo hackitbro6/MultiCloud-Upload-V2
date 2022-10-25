@@ -22,7 +22,7 @@ jobs:
       - name: Upload 
         uses: Difegue/action-megacmd@master
         with:
-          args: put /github/workspace/Riptide  Gp2 By Kannan Mass Games.exe
+          args: put /github/workspace/Riptide__Gp2_By_Kannan_Mass_Games.exe
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
