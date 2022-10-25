@@ -1,0 +1,31 @@
+name: Megauploadtest  
+on:
+  
+  workflow_dispatch:
+    inputs:
+      Directlink:
+        description: 'Enter DirectLink To Download ⚡️'
+        required: true
+      Filename:
+        description: 'Enter FIle name '
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download Directlink
+        run: wget ${{ github.event.inputs.Directlink }}
+
+      - name: Upload file
+        uses: Siege-Wizard/mega-upload@1.0.1
+        with:
+          file: ${{ github.event.inputs.Filename}}
+        env: 
+          USERNAME: ${{ secrets.MEGA_USERNAME }}
+          PASSWORD: ${{ secrets.MEGA_PASSWORD }}
+          
+
+        
