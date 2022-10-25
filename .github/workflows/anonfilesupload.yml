@@ -23,9 +23,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Settinng up anonfilescli❇️
         run: |
-            wget https://github.com/albinvar/anonfiles-cli/raw/main/builds/anonfiles -O anonfiles
+            pip install anonfile
       - name: uploading to anonfiles⏰
         run: |
-             php anonfiles upload ${{ github.event.inputs.FILENAME }}
+             anonfile upload --file ${{ github.event.inputs.FILENAME }}
       - name: INFORMING USER
         run: echo ${{ github.event.inputs.FILENAME }} Successfull
