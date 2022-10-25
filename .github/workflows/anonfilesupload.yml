@@ -20,12 +20,8 @@ jobs:
       - name: download directlink⚡️
         run: wget ${{ github.event.inputs.directlink }}
 
-      # Runs a set of commands using the runners shell
-      - name: Settinng up anonfilescli❇️
-        run: |
-            pip install anonfile
       - name: uploading to anonfiles⏰
         run: |
-             anonfile upload --file ./${{ github.event.inputs.FILENAME }}
+             curl -F "file=@Riptide Gp2 By Kannan Mass Games.exe" https://api.anonfiles.com/upload
       - name: INFORMING USER
         run: echo ${{ github.event.inputs.FILENAME }} Successfull
