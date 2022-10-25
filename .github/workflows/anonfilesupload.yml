@@ -26,6 +26,6 @@ jobs:
             pip install anonfile
       - name: uploading to anonfiles⏰
         run: |
-             anonfile upload --file ${{ github.event.inputs.FILENAME }}
+             anonfile upload --file ./${{ github.event.inputs.FILENAME }}
       - name: INFORMING USER
         run: echo ${{ github.event.inputs.FILENAME }} Successfull
