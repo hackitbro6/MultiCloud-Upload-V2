@@ -19,23 +19,13 @@ jobs:
       - name: Download Directlink
         run: wget ${{ github.event.inputs.Directlink }}
 
-      - name: Setting Up mega cli
-        run:
-            apt-get update \
-             && apt-get -y install \
-            --no-install-recommends \
-            curl \
-           gnupg2 \
-          ca-certificates \
-          && update-ca-certificates \
-          && curl  \
-      - name: uploading
+      - name: Upload 
+        uses: Difegue/action-megacmd@master
+        with:
+          args: put ${{ github.event.inputs.Filename }}
         env:
-         file: ${{ github.event.inputs.Filename }}
-        run: |
-            COPY "upload.sh" "/upload.sh"
-            RUN chmod +x upload.sh
-            ENTRYPOINT ["/upload.sh"]
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
           
          
   
