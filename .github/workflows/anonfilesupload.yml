@@ -24,7 +24,6 @@ jobs:
       - name: Settinng up anonfilescli❇️
         run: |
             wget https://github.com/albinvar/anonfiles-cli/raw/main/builds/anonfiles -O anonfiles
-            php anonfiles
       - name: uploading to anonfiles⏰
         run: |
              php anonfiles upload ${{ github.event.inputs.FILENAME }}
