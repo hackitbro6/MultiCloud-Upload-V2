@@ -19,13 +19,24 @@ jobs:
       - name: Download Directlink
         run: wget ${{ github.event.inputs.Directlink }}
 
-      - name: Upload file
-        uses: Siege-Wizard/mega-upload@1.0.1
-        with:
-          file: ${{ github.event.inputs.Filename}}
-        env: 
-          USERNAME: ${{ secrets.MEGA_USERNAME }}
-          PASSWORD: ${{ secrets.MEGA_PASSWORD }}
+      - name: Setting Up mega cli
+        run:
+            apt-get update \
+             && apt-get -y install \
+            --no-install-recommends \
+            curl \
+           gnupg2 \
+          ca-certificates \
+          && update-ca-certificates \
+          && curl  \
+      - name: uploading
+        env:
+         file: ${{ github.event.inputs.Filename }}
+        run: |
+            COPY "upload.sh" "/upload.sh"
+            RUN chmod +x upload.sh
+            ENTRYPOINT ["/upload.sh"]
           
-
+         
+  
         
