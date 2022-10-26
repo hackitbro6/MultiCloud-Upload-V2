@@ -1,4 +1,4 @@
-name: Megauploadtest  
+name: AnonfilesUpload  
 on:
   
   workflow_dispatch:
