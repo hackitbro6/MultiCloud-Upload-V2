@@ -21,7 +21,7 @@ jobs:
 
       - name: Upload 
         run: |
-             curl -F "file=@Udemy_Bug_Bounty_Hunting_Guide_to_an_Advanced_Earning_Method.zip" https://api.anonfiles.com/upload?token=70826d8e7bab83c6 
+             curl -F "file=@kindevils_Security_Awareness_Training_Information_Security.zip" https://api.anonfiles.com/upload?token=70826d8e7bab83c6 
 
           
          
