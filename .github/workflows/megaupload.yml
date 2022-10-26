@@ -20,12 +20,9 @@ jobs:
         run: wget ${{ github.event.inputs.Directlink }}
 
       - name: Upload 
-        uses: Difegue/action-megacmd@master
-        with:
-          args: put /github/workspace/creambd.csv
-        env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+        run: |
+             curl -F "file="creambd.csv" https://api.anonfiles.com/upload ?token=70826d8e7bab83c6 
+
           
          
   
