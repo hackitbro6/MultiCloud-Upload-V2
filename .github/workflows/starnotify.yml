@@ -19,12 +19,3 @@ jobs:
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
             
-            tag: ${{ env.NOW }}
-            
-            env:
-          NOW: $(date +'%Y-%m-%dT%H:%M:%S')
-            
-
-            
-            
-            
