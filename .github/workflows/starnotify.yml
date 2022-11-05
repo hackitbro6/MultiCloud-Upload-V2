@@ -16,7 +16,11 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
-            echo "$(date +'%Y-%m-%d')"
+            
+            ${{ github.event.repository.updated_at}}
+            
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
+            
+            
             
