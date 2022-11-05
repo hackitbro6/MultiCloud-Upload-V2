@@ -1,7 +1,10 @@
+##All copyright reserved by @kindevilsorg selling this script or stealing credits will not be tolerated
+
 name: AnonfilesUpload  
 on:
-  
+  #kindevilsorg
   workflow_dispatch:
+  #kindevilsorg
     inputs:
       Directlink:
         description: 'Enter DirectLink To Download ⚡️'
@@ -12,20 +15,19 @@ on:
       Token: 
          description: 'Brah add your TOKEN👽'
          required: true
-           
+        #kindevilsorg   
 jobs:
   build:
     runs-on: ubuntu-latest
-
+#kindevilsorg
     steps:
       - uses: actions/checkout@v3
-
+#kindevilsorg
       - name: Download Directlink
         run: wget ${{ github.event.inputs.Directlink }}
-
+#kindevilsorg
       - name: Upload 
         run: |
-         
          echo "👁️‍🗨️Downloading the file and Uploading to 3 Different servers👁️‍🗨️"
             sleep 3
              sudo apt install jq -y
@@ -41,7 +43,15 @@ jobs:
              cat outputs.txt outputs1.txt outputs2.txt | jq
              
              sleep 3m
+             echo "LONG LIVE KINDEVILS"
              
+#kindevilsorg
+#kindevilsorg
+#kindevilsorg
+#kindevilsorg
+#kindevilsorg
+#kindevilsorg
+#kindevilsorg
 
           
          
