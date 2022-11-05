@@ -10,6 +10,12 @@ Cᴏɴs:<br>
      ♾20 GB ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ<br>
      ♾ғɪʟᴇᴄʜᴀɴ,ʟᴇᴛsᴜᴘʟᴏᴀᴅᴄᴄ ᴅᴏᴇsɴᴛ ʜᴀᴠᴇ ᴀᴄᴄᴏᴜɴᴛ ᴜᴘʟᴏᴀᴅ sᴜᴘᴘᴏʀᴛ<br>
 sᴜᴘᴘᴏʀᴛ<br>
+
+<p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
+
+
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=Unknowngeek2008&repo=ANONFILES-UPLOAD&theme=dark)
+
 <h4 align="center"> 🚫 DISCLAIMER 🚫 </p>
 
 
