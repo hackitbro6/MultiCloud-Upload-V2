@@ -16,7 +16,5 @@ jobs:
             fork message: ${{ github.event.fork[0].message }}
             
             Repository: ${{ github.repository }}
-            
-            sticker=CAACAgUAAxkBAAEGUf5jZoEu5Wbjl3BXZed7HdmCNfhMugACnAQAAtqugFR9KqAIuhE3nSsE
-            
+        
             See all forks : https://github.com/${{ github.repository }}/network/members
