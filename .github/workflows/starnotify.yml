@@ -25,6 +25,8 @@ jobs:
   build2:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      date: $(date +'%Y-%m-%d')
     steps:
       - name: send telegram message on star
         uses: appleboy/telegram-action@master
@@ -34,7 +36,7 @@ jobs:
           message: |
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
-            ${{ github.event.repository.updated_at}}
+             ${{ env.date}}
             
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
