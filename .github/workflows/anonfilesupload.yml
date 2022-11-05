@@ -25,7 +25,11 @@ jobs:
 
       - name: Upload 
         run: |
-             curl -F "file=@${{ github.event.inputs.Filename }}" https://api.anonfiles.com/upload?token=${{ github.event.inputs.Token }}
+             apt install jq
+             curl -F "file=@${{ github.event.inputs.Filename }}" https://api.anonfiles.com/upload?token=${{ github.event.inputs.Token }} >>outputs.txt
+             cat outputs.txt | jq
+             sleep 2
+             
 
           
          
