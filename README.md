@@ -37,11 +37,19 @@ Cᴏɴs:<br>
                ɢɪᴛʜᴜʙ-ᴛᴇʀᴍs-ᴏғ-sᴇʀᴠɪᴄe - https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
    
 ```
+#
 
-<a href=""><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=15F748&vCenter=true&width=435&lines=THIS+REPO+WAS+CREATED+BY+%40KINDEVILSORG;ALL+COPYRIGHTS+RESERVED!!!!;%F0%9F%8C%9FSTAR+IT+IF+YOU+LIKE+IT" alt="Typing SVG" /></a>
+<p align="center">𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥</p>
 
+<p align="center"><a href="https://youtu.be/GaePandx3Ck"> <img src="https://img.shields.io/badge/Youtube%20Deploy-matrix?style=for-the-badge&logo=youtube" width="220" height="38.45"/></a></p>
+
+#
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
                           
 <a href="https://t.me/Kindevils"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-matrix.svg?logo=Telegram"></a>
 <a href="https://t.me/kindevilsorg"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-matrix.svg?logo=Telegram"></a>
+
+#
+
+<a href=""><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=15F748&vCenter=true&width=435&lines=THIS+REPO+WAS+CREATED+BY+%40KINDEVILSORG;ALL+COPYRIGHTS+RESERVED!!!!;%F0%9F%8C%9FSTAR+IT+IF+YOU+LIKE+IT" alt="Typing SVG" /></a>
