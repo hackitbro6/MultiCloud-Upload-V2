@@ -13,6 +13,9 @@ jobs:
     
     env:
       date: $(date +'%Y-%m-%d')
+      
+      
+      
 #kindevilsorg
     steps:
       - uses: actions/checkout@v3
@@ -21,6 +24,10 @@ jobs:
         run: |
               echo ${{ env.date}} >date.txt
               cat date.txt
+              
+              env:
+               datetxt: date.txt
+      
   
       - name: send telegram message on star
         uses: appleboy/telegram-action@master
@@ -30,8 +37,9 @@ jobs:
           message: |
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
-             ${{ env.date}}
+             ${{ env.datetxt}}
             
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
+
         
