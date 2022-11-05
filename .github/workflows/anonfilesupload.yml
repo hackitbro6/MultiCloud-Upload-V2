@@ -37,6 +37,9 @@ jobs:
            
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.filechan.org/upload >>outputs2.txt
              
+             echo "LINKS ARE COMING WAIT FOR 5 SECONDS!!!"
+             sleep 5
+             
              
              cat outputs.txt outputs1.txt outputs2.txt | jq
              echo "LONG LIVE KINDEVILS"
