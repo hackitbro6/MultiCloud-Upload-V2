@@ -1,6 +1,6 @@
 ##All copyright reserved by @kindevilsorg selling this script or stealing credits will not be tolerated
 
-name: AnonfilesUpload  
+name: MultiCloudupload  
 on:
   #kindevilsorg
   workflow_dispatch:
