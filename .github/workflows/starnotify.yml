@@ -26,7 +26,7 @@ jobs:
               cat date.txt
               
               env:
-               datetxt: date.txt
+               datetxt: cat date.txt
       
   
       - name: send telegram message on star
