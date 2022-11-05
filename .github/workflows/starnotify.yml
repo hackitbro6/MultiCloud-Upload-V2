@@ -22,12 +22,6 @@ jobs:
               echo ${{ env.date}} >date.txt
               cat date.txt
   
-  build2:
-    name: Build
-    runs-on: ubuntu-latest
-    env:
-      date: $(date +'%Y-%m-%d')
-    steps:
       - name: send telegram message on star
         uses: appleboy/telegram-action@master
         with:
