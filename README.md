@@ -37,5 +37,5 @@ Cᴏɴs:<br>
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
                           
-<a href="https://t.me/Kindevils"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-green.svg?logo=Telegram"></a>
+<a href="https://t.me/Kindevils"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-matrix.svg?logo=Telegram"></a>
 <a href="https://t.me/kindevilsorg"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-matrix.svg?logo=Telegram"></a>
