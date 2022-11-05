@@ -1,0 +1,22 @@
+name: telegram message
+on: fork
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ${{ github.actor }} created fork🎄 khikhikhi :
+            fork message: ${{ github.event.fork[0].message }}
+            
+            Repository: ${{ github.repository }}
+            
+            sticker=CAACAgUAAxkBAAEGUf5jZoEu5Wbjl3BXZed7HdmCNfhMugACnAQAAtqugFR9KqAIuhE3nSsE
+            
+            See all forks : https://github.com/${{ github.repository }}/network/members
