@@ -33,3 +33,9 @@ Cᴏɴs:<br>
 ```
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=15F748&vCenter=true&width=435&lines=THIS+REPO+WAS+CREATED+BY+%40KINDEVILSORG;ALL+COPYRIGHTS+RESERVED!!!!;%F0%9F%8C%9FSTAR+IT+IF+YOU+LIKE+IT" alt="Typing SVG" /></a>
+
+
+## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
+                          
+<a href="https://t.me/Kindevils"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-green.svg?logo=Telegram"></a>
+<a href="https://t.me/kindevilsorg"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-green.svg?logo=Telegram"></a>
