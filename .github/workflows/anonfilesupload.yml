@@ -33,17 +33,15 @@ jobs:
              sudo apt install jq -y
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.anonfiles.com/upload?token=${{ github.event.inputs.Token }} >>outputs.txt
              
-             
-             
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.letsupload.cc/upload >>outputs1.txt
            
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.filechan.org/upload >>outputs2.txt
              
              
              cat outputs.txt outputs1.txt outputs2.txt | jq
-             
-             sleep 3m
              echo "LONG LIVE KINDEVILS"
+              sleep 3m
+             
              
 #kindevilsorg
 #kindevilsorg
