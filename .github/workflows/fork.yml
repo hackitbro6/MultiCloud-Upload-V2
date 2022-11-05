@@ -12,7 +12,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            ${{ github.actor }} ᴄʀᴇᴀᴛᴇᴅ ғᴏʀᴋ🎄ᴏɴ $(date +'%Y-%m-%d') khikhikhi :
+            ${{ github.actor }} ᴄʀᴇᴀᴛᴇᴅ ғᴏʀᴋ🎄ᴏɴ $date +'%Y-%m-%dT%H:%M:%S khikhikhi :
             fork message: ${{ github.event.fork[0].message }}
             
             Repository: ${{ github.repository }}
