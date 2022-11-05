@@ -25,9 +25,7 @@ jobs:
               echo ${{ env.date}} >date.txt
               cat date.txt
               
-              env:
-               datetxt: date.txt
-      
+             
   
       - name: send telegram message on star
         uses: appleboy/telegram-action@master
@@ -37,7 +35,7 @@ jobs:
           message: |
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
-             ${{ env.datetxt}}
+             envsubst <date.txt 
             
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
