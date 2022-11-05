@@ -33,4 +33,4 @@ sᴜᴘᴘᴏʀᴛ<br>
    
 ```
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=2DF710&center=true&vCenter=true&width=435&lines=THIS+REPO+WAS+MADE+BY+KINDEVILSORG.+;ALL+COPYRIGHTS+RESERVED%F0%9F%91%81%EF%B8%8F%E2%80%8D%F0%9F%97%A8%EF%B8%8F" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=15F748&vCenter=true&width=435&lines=THIS+REPO+WAS+CREATED+BY+%40KINDEVILSORG;ALL+COPYRIGHTS+RESERVED!!!!;%F0%9F%8C%9FSTAR+IT+IF+YOU+LIKE+IT" alt="Typing SVG" /></a>
