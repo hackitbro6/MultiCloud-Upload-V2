@@ -18,7 +18,7 @@ jobs:
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
-            on $(date +'%Y-%m-%d')
+            on ${{date +'%Y-%m-%d'}}
             
             
             
