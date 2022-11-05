@@ -1,5 +1,6 @@
 name: telegram message
-on: [fork,star]
+on: [fork,watch]
+
 jobs:
 
   build:
