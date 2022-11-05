@@ -5,6 +5,7 @@ on:
 
 jobs:
 
+job1:
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -18,7 +19,25 @@ jobs:
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
-            on ${{date +'%Y-%m-%d'}}
+            
+            
+  job2:
+       needs: job1
+        steps:
+         - name: Get current time
+           uses: josStorer/get-current-time@v2.0.2
+           id: current-time
+              with: 
+                  format: YYYYMMDD-HH
+                   utcOffset: "+08:00"
+  - name: Use current time
+    env:
+      TIME: "${{ steps.current-time.outputs.time }}"
+      R_TIME: "${{ steps.current-time.outputs.readableTime }}"
+      F_TIME: "${{ steps.current-time.outputs.formattedTime }}"
+      YEAR: "${{ steps.current-time.outputs.year }}"
+      DAY: "${{ steps.current-time.outputs.day }}"
+    run: echo $TIME $R_TIME $F_TIME $YEAR $DAY
             
             
             
