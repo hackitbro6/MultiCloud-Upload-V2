@@ -26,21 +26,19 @@ jobs:
       - name: Upload 
         run: |
          
-         echo "Downloading the file and Uploading to 3 Different servers"
+         echo "👁️‍🗨️Downloading the file and Uploading to 3 Different servers👁️‍🗨️"
             sleep 3
              sudo apt install jq -y
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.anonfiles.com/upload?token=${{ github.event.inputs.Token }} >>outputs.txt
-             cat outputs.txt | jq
-             sleep 4
+             
+             
              
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.letsupload.cc/upload >>outputs1.txt
-             cat outputs1.txt | jq
-             
-             sleep 4 
-             
+           
              curl -F "file=@${{ github.event.inputs.Filename }}" https://api.filechan.org/upload >>outputs2.txt
              
-             cat outputs1.txt | jq
+             
+             cat outputs.txt output2.txt output3.txt | jq
              
              sleep 3m
              
