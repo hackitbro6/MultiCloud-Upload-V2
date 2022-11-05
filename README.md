@@ -11,6 +11,12 @@ Cᴏɴs:<br>
      ♾ғɪʟᴇᴄʜᴀɴ,ʟᴇᴛsᴜᴘʟᴏᴀᴅᴄᴄ ᴅᴏᴇsɴᴛ ʜᴀᴠᴇ ᴀᴄᴄᴏᴜɴᴛ ᴜᴘʟᴏᴀᴅ sᴜᴘᴘᴏʀᴛ<br>
 sᴜᴘᴘᴏʀᴛ<br>
 
+<h3>ʀᴇQᴜɪʀᴇᴍᴇɴᴛꜱ 📝</h3>
+
+- ANON Files TOKEN
+- FILE NAME WITH EXTENSION
+- DIRECT URL 
+
 <p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
 
 
