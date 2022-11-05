@@ -1,7 +1,10 @@
-name: MultiCloudupload  
+name: starnotify
 on:
-  #kindevilsorg
-  workflow_dispatch:
+ workflow_dispatch:
+ watch:
+    types: [started]
+
+  
   #kindevilsorg
   
 jobs:
@@ -18,4 +21,21 @@ jobs:
         run: |
               echo ${{ env.date}} >date.txt
               cat date.txt
+  
+  build2:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send telegram message on star
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
+            
+            ${{ github.event.repository.updated_at}}
+            
+            
+            https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
         
