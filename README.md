@@ -31,7 +31,7 @@ Cᴏɴs:<br>
    
 ```
 
-<a align="center" href=""><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=15F748&vCenter=true&width=435&lines=THIS+REPO+WAS+CREATED+BY+%40KINDEVILSORG;ALL+COPYRIGHTS+RESERVED!!!!;%F0%9F%8C%9FSTAR+IT+IF+YOU+LIKE+IT" alt="Typing SVG" /></a>
+<a href=""><img src="https://readme-typing-svg.herokuapp.com?font=small+caps&pause=1000&color=15F748&vCenter=true&width=435&lines=THIS+REPO+WAS+CREATED+BY+%40KINDEVILSORG;ALL+COPYRIGHTS+RESERVED!!!!;%F0%9F%8C%9FSTAR+IT+IF+YOU+LIKE+IT" alt="Typing SVG" /></a>
 
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
