@@ -13,7 +13,7 @@ sᴜᴘᴘᴏʀᴛ<br>
 
 <h3>ʀᴇQᴜɪʀᴇᴍᴇɴᴛꜱ 📝</h3>
 
-- ANON Files TOKEN
+- ANON FILES TOKEN
 - FILE NAME WITH EXTENSION
 - DIRECT URL 
 
