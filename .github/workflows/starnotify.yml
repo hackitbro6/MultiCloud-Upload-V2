@@ -1,4 +1,4 @@
-name: hello
+name: star
 on: 
  workflow_dispatch:
  watch:
