@@ -4,9 +4,9 @@ on:
  watch:
    types: [started]
    
-   jobs:
+jobs:
     
-     build:
+   build:
      runs-on: ubuntu-latest
 #kindevilsorg
      steps:
