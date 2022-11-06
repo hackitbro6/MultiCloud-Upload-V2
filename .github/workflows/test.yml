@@ -3,6 +3,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
     - name: Set env
@@ -10,4 +11,4 @@ jobs:
              echo $(date +%Y-%m-%d) >date.txt
              echo "GITHUB_SHA_SHORT=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
     - name: Test
-      run: echo ${{GITHUB_SHA_SHORT}}
+      run: echo ${{env.GITHUB_SHA_SHORT}}
