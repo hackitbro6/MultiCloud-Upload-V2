@@ -13,7 +13,7 @@ jobs:
     - name: Set env
       run: |
              echo $(date +%Y-%m-%d) >date.txt
-             echo "GITHUB_DATE=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
+             echo "GITHUB_DATE=$(echo "$(<date.txt )")" >> $GITHUB_ENV
     
   
     - name: send telegram message on push
