@@ -5,11 +5,11 @@ on:
    types: [started]
    
    jobs:
-    job1:
-    build:
-    runs-on: ubuntu-latest
+    
+     build:
+     runs-on: ubuntu-latest
 #kindevilsorg
-    steps:
+     steps:
       - uses: actions/checkout@v3
         steps:
          - uses: actions/checkout@v2
@@ -18,17 +18,17 @@ on:
              echo $(date +%Y-%m-%d) >date.txt
              echo "GITHUB_SHA_SHORT=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
              
-      - name: send telegram message on star
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
+         - name: send telegram message on star
+           uses: appleboy/telegram-action@master
+           with:
+            to: ${{ secrets.TELEGRAM_TO }}
+            token: ${{ secrets.TELEGRAM_TOKEN }}
+            message: |
+                      #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
-               ${{env.GITHUB_SHA_SHORT}}
+                        ${{env.GITHUB_SHA_SHORT}}
             
             
-            https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
+                          https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
              
      
