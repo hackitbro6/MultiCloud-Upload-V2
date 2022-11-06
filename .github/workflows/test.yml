@@ -6,6 +6,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set env
-      run: echo "GITHUB_SHA_SHORT=$(echo hello)" >> $GITHUB_ENV
+      run: |
+             echo $(date +%Y-%m-%d) >date.txt
+             echo "GITHUB_SHA_SHORT=$(echo date.txt)" >> $GITHUB_ENV
     - name: Test
       run: echo $GITHUB_SHA_SHORT
