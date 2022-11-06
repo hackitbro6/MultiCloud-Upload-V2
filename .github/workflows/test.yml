@@ -10,4 +10,4 @@ jobs:
              echo $(date +%Y-%m-%d) >date.txt
              echo "GITHUB_SHA_SHORT=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
     - name: Test
-      run: echo $GITHUB_SHA_SHORT
+      run: echo ${{GITHUB_SHA_SHORT}}
