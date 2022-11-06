@@ -1,18 +1,28 @@
 name: telegram message
-on: fork
+on: 
+ fork:
+ workflow_dispatch:
 jobs:
 
   build:
     name: Build
     runs-on: ubuntu-latest
+    
     steps:
-      - name: send telegram message on push
-        uses: appleboy/telegram-action@master
-        with:
+    - uses: actions/checkout@v2
+    - name: Set env
+      run: |
+             echo $(date +%Y-%m-%d) >date.txt
+             echo "GITHUB_DATE=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
+    
+  
+    - name: send telegram message on push
+      uses: appleboy/telegram-action@master
+      with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            https://github.com/${{ github.actor }} ᴄʀᴇᴀᴛᴇᴅ ғᴏʀᴋ🎄 khikhikhi :
+            https://github.com/${{ github.actor }} ᴄʀᴇᴀᴛᴇᴅ ғᴏʀᴋ🎄on ${{env.GITHUB_DATE}} khikhikhi :
             forked repo: https://github.com/${{ github.actor }}/MultiCloud-UPLOAD
             
             Repository: ${{ github.repository }}
