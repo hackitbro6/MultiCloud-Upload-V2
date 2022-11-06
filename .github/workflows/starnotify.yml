@@ -1,14 +1,22 @@
-name: telegram message
+name: hello
 on: 
-  watch:
-    types: [started]
-
-jobs:
-
-  build:
-    name: Build
+ workflow_dispatch:
+ watch:
+   types: [started]
+   
+   jobs:
+    build:
     runs-on: ubuntu-latest
+#kindevilsorg
     steps:
+      - uses: actions/checkout@v3
+        steps:
+         - uses: actions/checkout@v2
+         - name: Set env
+           run: |
+             echo $(date +%Y-%m-%d) >date.txt
+             echo "GITHUB_SHA_SHORT=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
+             
       - name: send telegram message on star
         uses: appleboy/telegram-action@master
         with:
@@ -17,7 +25,9 @@ jobs:
           message: |
             #sᴛᴀʀ ʜᴜᴇʜᴜᴇ
             
-            ${{ github.event.repository.updated_at}}
+               ${{env.GITHUB_SHA_SHORT}}
             
             
             https://github.com/${{ github.actor }} Sᴛᴀʀʀᴇᴅ Rᴇᴘᴏ Mᴜʟᴛɪᴄʟᴏᴜᴅ-Uᴘʟᴏᴀᴅ
+             
+     
