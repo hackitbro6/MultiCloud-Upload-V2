@@ -11,16 +11,15 @@ on:
 #kindevilsorg
      steps:
       - uses: actions/checkout@v3
-        steps:
-         - uses: actions/checkout@v2
-         - name: Set env
-           run: |
-             echo $(date +%Y-%m-%d) >date.txt
-             echo "GITHUB_SHA_SHORT=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
+      
+      - name: Set env
+        run: |
+                 echo $(date +%Y-%m-%d) >date.txt
+                  echo "GITHUB_SHA_SHORT=$(echo echo "$(<date.txt )")" >> $GITHUB_ENV
              
-         - name: send telegram message on star
-           uses: appleboy/telegram-action@master
-           with:
+      - name: send telegram message on star
+        uses: appleboy/telegram-action@master
+        with:
             to: ${{ secrets.TELEGRAM_TO }}
             token: ${{ secrets.TELEGRAM_TOKEN }}
             message: |
